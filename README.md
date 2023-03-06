@@ -64,7 +64,7 @@ Además nos recomienda usar esta herramienta online para testear las expresiones
 
 ## Mejoras
 
-Cuando finalize el ejercicio, se nos solicita que gestionemos las dependecias del Proyecto Mave, pasando de Junit 4 a Junit 5 con todo lo que ello implica.
+Cuando finalize el ejercicio, se nos solicita que gestionemos las dependecias del Proyecto Maven, pasando de Junit 4 a Junit 5 con todo lo que ello implica.
 
 ## Material de estudio
 
