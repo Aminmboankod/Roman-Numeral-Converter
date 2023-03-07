@@ -2,6 +2,10 @@ package edu.craptocraft.romansNumbers;
 
 import static org.junit.Assert.assertEquals;
 
+
+import java.util.List;
+
+import org.junit.Before;
 import org.junit.Test;
 
 public class RomansSymbolTest {
@@ -25,4 +29,5 @@ public class RomansSymbolTest {
         assertEquals(1000, RomanSymbol.M.getDecimalNumber());
 
     }
+
 }
