@@ -1,6 +1,6 @@
 package edu.craptocraft.romansNumbers;
 
-public enum RomansSymbol {
+public enum RomanSymbol {
     
     I(1),
     IV(4), 
@@ -16,16 +16,16 @@ public enum RomansSymbol {
     M(1000);
 
 
-    private int decimalNumber;
+    private int decimal;
 
 
-    RomansSymbol(int decimalNumber) {
-        this.decimalNumber = decimalNumber;
+    RomanSymbol(int decimal) {
+        this.decimal = decimal;
     }
 
 
     int getDecimalNumber() {
-        return this.decimalNumber;
+        return this.decimal;
     }
 
 
