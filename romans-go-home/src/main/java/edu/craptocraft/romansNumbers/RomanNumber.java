@@ -19,10 +19,6 @@ public class RomanNumber {
         return symbol.getDecimalNumber();
     }
 
-
-
-
-
     @Override
     public String toString() {
         return this.number;

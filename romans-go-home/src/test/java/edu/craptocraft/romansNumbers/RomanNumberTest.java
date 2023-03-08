@@ -31,8 +31,11 @@ public class RomanNumberTest {
 
     @Test
     public void decimalValueTest() {
-        RomanNumber hundred = new RomanNumber("C");
+        RomanNumber hundred = new RomanNumber("MMMDCCCLXXXVIII");
+        assertEquals(1, hundred.decimalValue("I"));
         assertEquals(100, hundred.decimalValue("C"));
+        assertEquals(1000, hundred.decimalValue("M"));
+
     }
 
 
