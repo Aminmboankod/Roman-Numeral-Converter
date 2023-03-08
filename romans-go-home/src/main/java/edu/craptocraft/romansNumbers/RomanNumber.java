@@ -14,9 +14,20 @@ public class RomanNumber {
         return null;
     }
 
+    public int decimalValue(String number){
+        RomanSymbol symbol = Enum.valueOf(RomanSymbol.class, String.valueOf(number));
+        return symbol.getDecimalNumber();
+    }
+
+
+
+
+
     @Override
     public String toString() {
         return this.number;
     }
+
+
 
 }

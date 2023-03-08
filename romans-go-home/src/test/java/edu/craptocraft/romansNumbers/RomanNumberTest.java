@@ -28,15 +28,13 @@ public class RomanNumberTest {
         assertEquals("C", hundred.toString());
     }
 
-    // /* Grupos sumatorios */
 
-    // @Test
-    // public void sum_only_M_Test(){
+    @Test
+    public void decimalValueTest() {
+        RomanNumber hundred = new RomanNumber("C");
+        assertEquals(100, hundred.decimalValue("C"));
+    }
 
-    //     RomanNumber threeHundred = new RomanNumber("MMM");
-    //     assertEquals(300, threeHundred.toDecimal());
-
-    // }
 
 
 }
