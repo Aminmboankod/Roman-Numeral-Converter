@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class RomanNumber {
 
     private String number;
-    private String sumatorios = "I(?![VX])";
+    private String sumatorios = "I(?![VX])|(?<!I)[VX](?![LC])";
 
 
     public RomanNumber(String number) {
@@ -47,7 +47,7 @@ public class RomanNumber {
         * creo un matcher a partir del regex 
         * que almacena las reglas del UNO en numeros romanos 
         */
-        
+
         String regex = this.getSumatorios();
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(this.getNumber());
