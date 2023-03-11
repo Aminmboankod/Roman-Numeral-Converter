@@ -47,6 +47,9 @@ public class RomanNumberTest {
     @Test
     public void sum_all_Ones() {
         RomanNumber ones = new RomanNumber("III");
-        assertEquals(3, ones.toDecimal());
+        assertEquals(3, ones.resultSumatory());
+
+        RomanNumber someOnes = new RomanNumber("UIIIU");
+        assertEquals(3, someOnes.resultSumatory());
     }
 }
