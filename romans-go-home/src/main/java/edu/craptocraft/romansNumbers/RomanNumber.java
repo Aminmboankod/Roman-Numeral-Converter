@@ -14,17 +14,21 @@ public class RomanNumber {
         
     }
 
+    /*
+     * ------getters & setters--------
+     */
+
     public String getSumatorios(){
         return this.sumatorios;
     }
 
     public String getNumber(){
         return this.number;
-    } 
-
-    public Object toDecimal() {
-        return resultSumatory();
     }
+
+    /*
+     *-------logic methods---------
+     */
 
     public int decimalValue(String number){
         
@@ -59,6 +63,9 @@ public class RomanNumber {
     }
 
 
+    /*
+     * polymorfims methods
+     */
 
     @Override
     public String toString() {

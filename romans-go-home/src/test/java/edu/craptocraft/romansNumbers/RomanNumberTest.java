@@ -42,11 +42,11 @@ public class RomanNumberTest {
 
     @Test
     public void sum_all_fives() {
-        RomanNumber ones = new RomanNumber("V");
-        assertEquals(5, ones.resultSumatory());
+        RomanNumber fives = new RomanNumber("V");
+        assertEquals(5, fives.resultSumatory());
 
-        RomanNumber someOnes = new RomanNumber("VV");
-        assertEquals(10, someOnes.resultSumatory());
+        RomanNumber errorFive = new RomanNumber("VVV");
+        assertEquals(0, errorFive.resultSumatory());
 
     }
 }
