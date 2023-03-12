@@ -41,10 +41,15 @@ public class RomanNumberTest {
     }
 
     @Test
-    public void sum_all_fives() {
+    public void fives() {
         RomanNumber fives = new RomanNumber("V");
         assertEquals(5, fives.resultSumatory());
 
+
+        /*
+         * En el siguiente caso no debe de sumarse porque la expresión correcta
+         * sería XV y no VVV como le paso en el test
+         */
         RomanNumber errorFive = new RomanNumber("VVV");
         assertEquals(0, errorFive.resultSumatory());
 
