@@ -1,11 +1,9 @@
-package edu.craptocraft.romansNumbers;
+package edu.craptocraft.romansNumbers.romanrules;
 
 import static org.junit.Assert.assertEquals;
 
 
 import org.junit.Test;
-
-import edu.craptocraft.romansNumbers.romanrules.RomanNumber;
 
 public class RomanNumberTest {
 
