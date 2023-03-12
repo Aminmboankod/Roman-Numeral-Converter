@@ -36,7 +36,7 @@ public class RomanNumberTest {
         RomanNumber ones = new RomanNumber("III");
         assertEquals(3, ones.resultSumatory());
 
-        
+
         /*Si encuentra un valor no válido devuelve 0 */
         RomanNumber someOnes = new RomanNumber("UIIIU");
         assertEquals(0, someOnes.resultSumatory());
@@ -59,5 +59,11 @@ public class RomanNumberTest {
         RomanNumber errorFive = new RomanNumber("VVV");
         assertEquals(0, errorFive.resultSumatory());
 
+    }
+
+    @Test
+    public void tenSymbol() {
+        RomanNumber ten = new RomanNumber("X");
+        assertEquals(10, ten.resultSumatory());
     }
 }

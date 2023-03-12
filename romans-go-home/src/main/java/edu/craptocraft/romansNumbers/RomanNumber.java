@@ -31,24 +31,27 @@ public class RomanNumber {
      *-------logic methods---------
      */
 
+
+     
+
     public int decimalValue(String number){
         
         int result = 0;
         RomanSymbol previousSymbol = null;
-    
+
         for (int i = 0; i < number.length(); i++) {
             char currentChar = number.charAt(i);
             RomanSymbol currentSymbol = RomanSymbol.valueOf(String.valueOf(currentChar));
-    
+
             if (previousSymbol != null && currentSymbol.getDecimalNumber() > previousSymbol.getDecimalNumber()) {
                 result += currentSymbol.getDecimalNumber() - 2 * previousSymbol.getDecimalNumber();
             } else {
                 result += currentSymbol.getDecimalNumber();
             }
-    
+
             previousSymbol = currentSymbol;
         }
-    
+
         return result;
     }
 
