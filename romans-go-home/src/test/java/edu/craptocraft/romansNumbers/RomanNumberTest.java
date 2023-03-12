@@ -65,5 +65,8 @@ public class RomanNumberTest {
     public void tenSymbol() {
         RomanNumber ten = new RomanNumber("X");
         assertEquals(10, ten.resultSumatory());
+
+        RomanNumber thirty = new RomanNumber("XXX");
+        assertEquals(30, thirty.resultSumatory());
     }
 }
