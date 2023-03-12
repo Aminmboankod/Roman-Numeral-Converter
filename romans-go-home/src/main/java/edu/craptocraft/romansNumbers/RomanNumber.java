@@ -6,7 +6,8 @@ import java.util.regex.Pattern;
 public class RomanNumber {
 
     private String number;
-    private String sumatorios = "I(?![VX])|(?<!I)[VX](?![LC])";
+    private String sumatorios = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|I{0,3}V|V?I{0,3})$";
+    
 
 
     public RomanNumber(String number) {
@@ -32,11 +33,22 @@ public class RomanNumber {
 
     public int decimalValue(String number){
         
-        RomanSymbol symbol;
         int result = 0;
+        RomanSymbol previousSymbol = null;
     
-        symbol = Enum.valueOf(RomanSymbol.class, String.valueOf(number));   
-        result = symbol.getDecimalNumber(); 
+        for (int i = 0; i < number.length(); i++) {
+            char currentChar = number.charAt(i);
+            RomanSymbol currentSymbol = RomanSymbol.valueOf(String.valueOf(currentChar));
+    
+            if (previousSymbol != null && currentSymbol.getDecimalNumber() > previousSymbol.getDecimalNumber()) {
+                result += currentSymbol.getDecimalNumber() - 2 * previousSymbol.getDecimalNumber();
+            } else {
+                result += currentSymbol.getDecimalNumber();
+            }
+    
+            previousSymbol = currentSymbol;
+        }
+    
         return result;
     }
 

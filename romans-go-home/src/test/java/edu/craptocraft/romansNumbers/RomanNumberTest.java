@@ -36,8 +36,14 @@ public class RomanNumberTest {
         RomanNumber ones = new RomanNumber("III");
         assertEquals(3, ones.resultSumatory());
 
+        
+        /*Si encuentra un valor no válido devuelve 0 */
         RomanNumber someOnes = new RomanNumber("UIIIU");
-        assertEquals(3, someOnes.resultSumatory());
+        assertEquals(0, someOnes.resultSumatory());
+
+        RomanNumber toManyOnes = new RomanNumber("IIIII");
+        assertEquals(0, toManyOnes.resultSumatory());
+
     }
 
     @Test
