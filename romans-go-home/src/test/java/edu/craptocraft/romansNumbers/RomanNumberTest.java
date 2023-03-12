@@ -68,5 +68,9 @@ public class RomanNumberTest {
 
         RomanNumber thirty = new RomanNumber("XXX");
         assertEquals(30, thirty.resultSumatory());
+
+        RomanNumber errorThirty = new RomanNumber("XXXXXXXXX");
+        assertEquals(0, errorThirty.resultSumatory());
+        
     }
 }
