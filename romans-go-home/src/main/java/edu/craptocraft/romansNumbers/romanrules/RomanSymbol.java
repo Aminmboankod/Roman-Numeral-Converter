@@ -1,4 +1,4 @@
-package edu.craptocraft.romansNumbers;
+package edu.craptocraft.romansNumbers.romanrules;
 
 public enum RomanSymbol {
     
@@ -24,7 +24,7 @@ public enum RomanSymbol {
     }
 
 
-    int getDecimalNumber() {
+    public int getDecimalNumber() {
         return this.decimal;
     }
 

@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import edu.craptocraft.romansNumbers.romanrules.RomanNumber;
+
 public class RomanNumberTest {
 
     

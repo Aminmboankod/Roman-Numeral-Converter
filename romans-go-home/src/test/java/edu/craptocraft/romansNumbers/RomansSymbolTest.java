@@ -3,6 +3,8 @@ package edu.craptocraft.romansNumbers;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import edu.craptocraft.romansNumbers.romanrules.RomanSymbol;
+
 public class RomansSymbolTest {
     
 

@@ -1,4 +1,4 @@
-package edu.craptocraft.romansNumbers;
+package edu.craptocraft.romansNumbers.romanrules;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

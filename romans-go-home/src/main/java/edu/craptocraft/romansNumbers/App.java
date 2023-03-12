@@ -2,7 +2,9 @@ package edu.craptocraft.romansNumbers;
 
 import java.util.List;
 
-public class RomansGoHome {
+import edu.craptocraft.romansNumbers.romanrules.RomanNumber;
+
+public class App {
 
 	public static void main(String[] args) {
 
