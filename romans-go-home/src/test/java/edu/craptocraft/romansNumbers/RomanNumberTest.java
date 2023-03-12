@@ -34,22 +34,22 @@ public class RomanNumberTest {
     @Test
     public void sum_all_ones() {
         RomanNumber ones = new RomanNumber("III");
-        assertEquals(3, ones.resultSumatory());
+        assertEquals(3, ones.toDecimal());
 
 
         /*Si encuentra un valor no válido devuelve 0 */
         RomanNumber someOnes = new RomanNumber("UIIIU");
-        assertEquals(0, someOnes.resultSumatory());
+        assertEquals(0, someOnes.toDecimal());
 
         RomanNumber toManyOnes = new RomanNumber("IIIII");
-        assertEquals(0, toManyOnes.resultSumatory());
+        assertEquals(0, toManyOnes.toDecimal());
 
     }
 
     @Test
     public void fives() {
         RomanNumber fives = new RomanNumber("V");
-        assertEquals(5, fives.resultSumatory());
+        assertEquals(5, fives.toDecimal());
 
 
         /*
@@ -57,20 +57,29 @@ public class RomanNumberTest {
          * sería XV y no VVV como le paso en el test
          */
         RomanNumber errorFive = new RomanNumber("VVV");
-        assertEquals(0, errorFive.resultSumatory());
+        assertEquals(0, errorFive.toDecimal());
 
     }
 
     @Test
     public void tenSymbol() {
         RomanNumber ten = new RomanNumber("X");
-        assertEquals(10, ten.resultSumatory());
+        assertEquals(10, ten.toDecimal());
 
         RomanNumber thirty = new RomanNumber("XXX");
-        assertEquals(30, thirty.resultSumatory());
+        assertEquals(30, thirty.toDecimal());
 
-        RomanNumber errorThirty = new RomanNumber("XXXXXXXXX");
-        assertEquals(0, errorThirty.resultSumatory());
-        
+        RomanNumber errorThirty = new RomanNumber("XXXXXXXXXXXX");
+        assertEquals(0, errorThirty.toDecimal());
+
+    }
+
+    @Test
+    public void normalNumberRoman() {
+        RomanNumber firsRomanNumber = new RomanNumber("MMMDCCCLXXXVIII");
+        assertEquals(3888, firsRomanNumber.toDecimal());
+
+        RomanNumber secondRomanNumber = new RomanNumber("CDXLIV");
+        assertEquals(444, secondRomanNumber.toDecimal());
     }
 }
