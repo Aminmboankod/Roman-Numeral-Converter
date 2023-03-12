@@ -52,7 +52,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>edu.craptocraft.</mainClass>
+                <mainClass>edu.craptocraft.romansNumbers.App</mainClass>
               </manifest>
               <manifestEntries>
                 <url>${project.url}</url>
